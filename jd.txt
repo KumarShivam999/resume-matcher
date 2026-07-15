@@ -1,0 +1,80 @@
+Associate Data Scientist & Machine Learning
+Engineer
+TARGET ROLE SPECIFICATION
+Department: Data Intelligence & Advanced
+Analytics
+Target Level: Associate / Graduate (Entry Level)
+Reporting To: Lead Data Scientist Core Tech Stack: Python, SQL, XGBoost, Power BI, FastAPI,
+React
+1. Position Overview
+The Associate Data Scientist & Machine Learning Engineer plays a vital role in transforming complex transactional,
+behavioral, and operational data into production-ready analytical pipelines and predictive frameworks. Working at the
+intersection of statistical learning and robust web technologies, the successful candidate will not only build highly
+accurate machine learning models but also assist in exposing these solutions via microservices and interactive
+analytical interfaces.
+"This role is uniquely tailored for a highly analytical engineer who possesses strong foundations in statistical predictive
+models (such as Gradient Boosting and Regression) alongside full-stack engineering capability to build, serve, and
+visualize data applications."
+2. Key Responsibilities & Duties
+Predictive Modeling & Forecasting: Design, train, evaluate, and optimize regression, classification, and timeseries forecasting models (e.g., XGBoost, Random Forests, LightGBM) on large-scale datasets to identify patterns
+and forecast operational metrics.
+End-to-End Pipeline Engineering: Build clean ETL (Extract, Transform, Load) pipelines utilizing Python (Pandas,
+NumPy) and SQL to scrub, normalize, and structurally enrich raw data from relational databases and cloud sources.
+BI & Dashboard Automation: Design and automate intuitive corporate dashboards using tools like Power BI and
+Excel to communicate daily, weekly, or monthly performance metrics clearly to senior management.
+API & Service Development: Package trained machine learning algorithms into fast, scalable REST APIs (using
+FastAPI or Flask) and build dynamic frontend layers (using React) to allow internal applications or external systems
+to consume predictive insights.
+NLP & Text Extraction: Implement Natural Language Processing (NLP) techniques utilizing packages such as
+spaCy to parse, categorize, and score unstructured text profiles (e.g., resume matching, customer feedback
+sentiment analysis).
+3. Required Skills & Qualifications
+Technical Foundations:
+•
+•
+•
+•
+•
+Page 1 of 2
+Python SQL (PostgreSQL/MySQL) scikit-learn XGBoost / LightGBM Power BI / Excel Power Query FastAPI / Node.js
+React.js spaCy (NLP) HDFS / Big Data Basics
+Academic Background & Soft Skills:
+Pursuing or completed a B.Tech / B.E. in Computer Science, Data Science, or a related quantitative engineering
+field.
+Excellent presentation and professional communication skills, with the ability to articulate technical metrics and
+complex algorithms to business-oriented stakeholders.
+Strong problem-solving capability and attention to detail, maintaining accuracy when cleaning large transactional
+datasets.
+4. Custom Self-Assessment Match Matrix
+The table below highlights how your academic projects and technology selections align directly with the criteria of this Job
+Description:
+Role Requirement Your Completed Project & Tech Stack Match Assessment
+Time-Series & Predictive
+Modeling
+Walmart Sales Intelligence Dashboard: Built an
+end-to-end forecasting solution using an XGBoost
+Regressor in Python, deployed via Streamlit.
+STRONG MATCH
+Directly maps to statistical predictive
+modeling expectations.
+Data Cleaning & BI
+Automation
+Coffee Shop Sales Analysis: Processed and
+automated cleaning of 50,000+ transaction lines using
+Excel Power Query and built interactive Power BI
+reporting dashboards.
+STRONG MATCH
+Demonstrates ability to clean data and
+build executive-level dashboards.
+NLP & API Deployment AI-Powered Resume Screener: Built using FastAPI
+and spaCy to parse natural language, calculate profile
+matching scores, and output via a React interface.
+EXCELLENT MATCH
+Exhibits strong NLP understanding and
+service packaging skills.
+Full-Stack Interface Dev Mini Instagram / Full-Stack Portal: Constructed
+custom MERN-stack services implementing JWT
+authentication and Multer media pipeline architectures.
+HIGHLY CAPABLE
+Translates to building feature-rich internal
+analytics tools.

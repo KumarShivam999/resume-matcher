@@ -1,0 +1,57 @@
+Kumar Shivam
+LinkedIn: https://www.linkedin.com/in/shivamkumar26/ Email:kumarshivam53500@gmail.com
+GitHub: https://github.com/KumarShivam999 Mobile: + 91- 9153108448
+SKILLS
+Languages: C, C++, Java, JavaScript, Python
+Tools/Platforms: VS Code, IDLE,LeetCode
+Core CS Fundamentals: DBMS, OS, CN, SQL, OOPs
+Soft Skills: Problem-Solving, Project Management, Adaptability,Resilience
+PROJECTS
+Walmart Sales Intelligence & Predictive Analytics Dashboard | GitHub Mar’26
+• Developed an end-to-end sales forecasting app using XGBoost and Python, achieving high accuracy by engineering seasonal
+and holiday-impact features.
+• Architected an interactive Streamlit dashboard with a CI/CD pipeline via GitHub, ensuring real-time automated deployment
+of model updates to the cloud.
+• Optimized a data pipeline for 45K+ rows using Pandas and Scikit-Learn, handling complex preprocessing and categorical
+encoding for robust predictions.
+• Tech Stack: Python, XGBoost Regressor, Streamlit
+Operating System- Deadlock Detection | GitHub May’25
+• Created a Java-based deadlock detection module using resource-allocation graphs to identify circular wait conditions in
+multithreaded environments.
+• Implemented thread monitoring and synchronization analysis to automatically flag potential deadlock scenarios and improved
+system reliability.
+• Improved system reliability by preventing deadlocks and execution freezes, enabling smoother concurrent processing and
+reducing debugging time for scalable, high-performance applications.
+• Tech Stack: Java, Bash
+Coffee Shop Sales | GitHub Apr’25
+• Analyzed sales data to identify peak hours, product performance and customer trends.
+• Performed data cleaning, created KPIs and designed an interactive dashboard for business insights.
+• Leveraged data visualization to guide staffing, product promotion, and inventory optimization based on actual sales patterns,
+enabling smarter business decisions.
+• Tech Stack: Excel, Power BI, DAX
+TRAINING
+Summer Training | LPU | Machine Learning:Basics to AI Application | Certificate Jun’25 – Jul’25
+• Learned Fundamentals of Machine Learning and AI Concepts.
+• Designed algorithms for data analysis and predictive models in Python.
+• Explored tools such as Scikit-Learn, Numpy, and Pandas.
+• Utilized machine learning to forecast trends, detect user behaviour patterns, streamline decision-making for datadriven business insights.
+CERTIFICATES
+• Cloud Computing | NPTEL | Certificate Apr’26
+• ComputationalTheory: Language Principles &Finite Automata Theory | Infosys | Certificate Sept’24
+• Introduction to Hardware and Operating System | Coursera | Certificate Sept’24
+• Legacy Responsive Web Design | FreeCodeCamp | Certificate Nov’23
+ACHIEVEMENTS
+• Achieved a top-5 ranking in a college hackathon with 3 team members. Jul’25
+• Secured Global Rank 982nd: May’25
+Among 15k+ participants in LeetCode Biweekly Contest 96.
+EDUCATION
+• Lovely Professional University
+Bachelor of Technology - Computer Science and Engineering | CGPA:7.01
+Phagwara, Punjab
+ Since Aug’23
+• RN College Hajipur, Bihar
+ Intermediate Percentage | 68.6% Apr’21 – Apr’23
+• Virtuous International K-12 School:
+ Matriculation Percentage | 45%
+Hajipur,Bihar
+Apr’20 – Mar’21
