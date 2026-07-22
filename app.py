@@ -1,6 +1,6 @@
 import streamlit as st
-import requests
 import pdfplumber
+from analyzer import analyze
 
 st.title("Resume Matcher")
 st.write("Upload your resume and paste the job description to see your match score and skill gaps.")
@@ -24,11 +24,8 @@ if st.button("Analyze"):
         if not resume_text.strip():
             st.error("Couldn't extract text from this PDF. Try a different file.")
         else:
-            response = requests.post(
-                "http://127.0.0.1:8000/analyze",
-                json={"resume_text": resume_text, "jd_text": jd_text}
-            )
-            result = response.json()
+            with st.spinner("Analyzing..."):
+                result = analyze(resume_text, jd_text)
 
             col_a, col_b = st.columns(2)
             with col_a:
