@@ -1,6 +1,11 @@
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer, util
+
+load_dotenv() 
 
 SKILLS_LIST = [
     "python", "java", "javascript", "c++", "c",
@@ -11,8 +16,12 @@ SKILLS_LIST = [
     "deep learning", "oop", "dbms", "os", "cn"
 ]
 
-# Load the semantic model once (this may take a few seconds the first time)
 model = SentenceTransformer('all-MiniLM-L6-v2')
+
+groq_client = OpenAI(
+    api_key=os.getenv("GROQ_API_KEY"),
+    base_url="https://api.groq.com/openai/v1"
+)
 
 def extract_skills(text):
     text_lower = text.lower()
@@ -29,6 +38,25 @@ def get_semantic_score(resume_text, jd_text):
     score = util.cos_sim(embeddings[0], embeddings[1]).item()
     return round(score * 100, 2)
 
+def get_ai_feedback(resume_text, jd_text, missing_skills):
+    prompt = f"""You are a senior recruiter reviewing a resume against a job description.
+
+Job Description:
+{jd_text}
+
+Resume:
+{resume_text}
+
+Missing skills detected: {', '.join(missing_skills)}
+
+Give a short, honest, 3-4 sentence assessment of this candidate's fit for the role, and one specific actionable suggestion to improve their resume. Be direct and professional."""
+
+    response = groq_client.chat.completions.create(
+    model="llama-3.3-70b-versatile",
+    messages=[{"role": "user", "content": prompt}]
+    )
+    return response.choices[0].message.content
+
 def analyze(resume_text, jd_text):
     tfidf_score = get_tfidf_score(resume_text, jd_text)
     semantic_score = get_semantic_score(resume_text, jd_text)
@@ -39,13 +67,16 @@ def analyze(resume_text, jd_text):
     matched = resume_skills & jd_skills
     missing = jd_skills - resume_skills
 
+    ai_feedback = get_ai_feedback(resume_text, jd_text, list(missing))
+
     return {
         "tfidf_score": tfidf_score,
         "semantic_score": semantic_score,
         "matched_skills": list(matched),
         "missing_skills": list(missing),
         "jd_skills": list(jd_skills),
-        "resume_skills": list(resume_skills)
+        "resume_skills": list(resume_skills),
+        "ai_feedback": ai_feedback
     }
 
 if __name__ == "__main__":

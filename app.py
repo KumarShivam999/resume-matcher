@@ -43,5 +43,8 @@ if st.button("Analyze"):
             with col2:
                 st.write("❌ Missing Skills")
                 st.write(result['missing_skills'])
+
+            st.subheader("🤖 AI Recruiter Feedback")
+            st.write(result['ai_feedback'])
     else:
         st.warning("Please upload a resume PDF and paste the job description.")
